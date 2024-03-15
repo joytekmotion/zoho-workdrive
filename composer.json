@@ -1,0 +1,30 @@
+{
+    "name": "joytekmotion/zoho-workdrive",
+    "description": "Laravel flysystem adapter for Zoho Workdrive",
+    "type": "library",
+    "prefer-stable": true,
+    "license": "MIT",
+    "require": {
+        "php": "^7.2 | ^8.0",
+        "guzzlehttp/guzzle": "^7.2",
+        "league/flysystem": "^2.1.1|^3.0",
+        "illuminate/support":  "^10.0",
+        "joytekmotion/zoho-oauth": "^1.0",
+        "league/mime-type-detection": "^1.15"
+    },
+    "require-dev": {
+        "league/flysystem-adapter-test-utilities": "^3.21"
+    },
+    "authors": [
+        {
+            "name": "Obinna Elvis Okechukwu",
+            "email": "dreamor47@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Joytekmotion\\Zoho\\Workdrive\\": "src"
+        }
+    }
+}
