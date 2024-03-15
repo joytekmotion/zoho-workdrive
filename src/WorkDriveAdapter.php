@@ -34,8 +34,9 @@ class WorkDriveAdapter implements FilesystemAdapter
         }
     }
 
-    protected function makeRequest(string $method, string $path, array $options = [], ?string $baseUrl = null)
+    protected function makeRequest(string $method, string $path, array $options = [], ?string $baseUrl = null): Response
     {
+        var_dump($this->client->generateAccessToken());
         $baseUrl = $baseUrl ?? $this->baseUrl;
         $accessToken = $this->client->generateAccessToken();
         return Http::withToken($accessToken)->accept('application/vnd.api+json')
