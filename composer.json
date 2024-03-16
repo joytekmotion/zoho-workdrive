@@ -26,5 +26,6 @@
         "psr-4": {
             "Joytekmotion\\Zoho\\Workdrive\\": "src"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
